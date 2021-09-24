@@ -1,0 +1,103 @@
+Imports System.Console
+Module Module1
+    Sub Main()
+        'Konjska utrka
+        Const cilj As Integer = 30 ' postavljamo dužinu staze
+        Dim rnd As Random = New Random()
+        Dim konj1, konj2, konj3, konj4, konj5, konj6, konj7, konj8, konj9, konj10 As Integer
+        While konj1 < cilj And konj2 < cilj And konj3 < cilj And konj4 < cilj And konj5 < cilj And konj6 < cilj And konj7 < cilj And konj8 < cilj And konj9 < cilj And konj10 < cilj
+            Clear()
+            For i = 0 To konj1
+                Write(".")
+            Next
+            WriteLine("Konj1")
+
+            For i = 0 To konj2
+                Write(".")
+            Next
+            WriteLine("Konj2")
+
+            For i = 0 To konj3
+                Write(".")
+            Next
+            WriteLine("Konj3")
+
+            For i = 0 To konj4
+                Write(".")
+            Next
+            WriteLine("Konj4")
+
+            For i = 0 To konj5
+                Write(".")
+            Next
+            WriteLine("Konj5")
+
+            For i = 0 To konj6
+                Write(".")
+            Next
+            WriteLine("Konj6")
+
+            For i = 0 To konj7
+                Write(".")
+            Next
+            WriteLine("Konj7")
+
+            For i = 0 To konj8
+                Write(".")
+            Next
+            WriteLine("Konj8")
+
+            For i = 0 To konj9
+                Write(".")
+            Next
+            WriteLine("Konj9")
+
+            For i = 0 To konj10
+                Write(".")
+            Next
+            WriteLine("Konj10")
+
+            konj1 = konj1 + rnd.Next(1, 5)
+            konj2 = konj2 + rnd.Next(1, 5)
+            konj3 = konj3 + rnd.Next(1, 5)
+            konj4 = konj4 + rnd.Next(1, 5)
+            konj5 = konj5 + rnd.Next(1, 5)
+            konj6 = konj6 + rnd.Next(1, 5)
+            konj7 = konj7 + rnd.Next(1, 5)
+            konj8 = konj8 + rnd.Next(1, 5)
+            konj9 = konj9 + rnd.Next(1, 5)
+            konj10 = konj10 + rnd.Next(1, 5)
+            Threading.Thread.Sleep(1000)
+        End While
+        If konj1 >= cilj Then
+            WriteLine("1.konj je pobjednik.")
+        End If
+        If konj2 >= cilj Then
+            WriteLine("2.konj je pobjednik.")
+        End If
+        If konj3 >= cilj Then
+            WriteLine("3.konj je pobjednik.")
+        End If
+        If konj4 >= cilj Then
+            WriteLine("4.konj je pobjednik.")
+        End If
+        If konj5 >= cilj Then
+            WriteLine("5.konj je pobjednik.")
+        End If
+        If konj6 >= cilj Then
+            WriteLine("6.konj je pobjednik.")
+        End If
+        If konj7 >= cilj Then
+            WriteLine("7.konj je pobjednik.")
+        End If
+        If konj8 >= cilj Then
+            WriteLine("8.konj je pobjednik.")
+        End If
+        If konj9 >= cilj Then
+            WriteLine("9.konj je pobjednik.")
+        End If
+        If konj10 >= cilj Then
+            WriteLine("10.konj je pobjednik.")
+        End If
+    End Sub
+End Module
